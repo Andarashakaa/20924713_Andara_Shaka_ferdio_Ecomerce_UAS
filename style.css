@@ -1,0 +1,47 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5dc;
+}
+
+.hero {
+  position: relative;
+  background: url('../images/hero.png') no-repeat center center/cover;
+  height: 100vh;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Overlay gelap transparan */
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+h1, h2, h5 {
+  font-weight: 600;
+}
+
+.produk-img {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.produk-img:hover {
+  transform: scale(1.05);
+}
+
+.produk-card {
+  transition: transform 0.3s ease;
+}
+
+.produk-card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  margin-top: auto;
+}
